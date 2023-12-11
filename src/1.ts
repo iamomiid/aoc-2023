@@ -80,8 +80,4 @@ const extractNumbersFromLine = (line: string) => {
 	return Number(`${firstNumber}${lastNumber}`);
 };
 
-const solve = async () => {
-	console.log(input.map(extractNumbersFromLine).reduce((a, b) => a + b, 0));
-};
-
-solve();
+export const solve = async () => input.map(extractNumbersFromLine).reduce((a, b) => a + b, 0)
